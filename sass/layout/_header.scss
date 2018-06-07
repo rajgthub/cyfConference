@@ -1,0 +1,19 @@
+.header {
+    height: 100vh;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba(0, 0, 0, 0.2),
+    //     rgba(0, 0, 0, 0.2)), url(../img/landigbg.jpg);
+    background-image:url(../img/landigbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone){
+        padding: 3rem;
+        // margin: 3rem;
+    };
+    // opacity: 0.8;
+}
