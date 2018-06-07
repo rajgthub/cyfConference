@@ -64,7 +64,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 5rem; } }
+        font-size: 6rem; } }
   .heading-primary--code {
     color: #d12e2f;
     transform: scale(1, 1.5);
@@ -81,7 +81,8 @@ body {
     transform: translateX(-50%); }
     @media only screen and (max-width: 37.5em) {
       .welcome--tns {
-        transform: translateX(-70%); } }
+        transform: translateX(-40%);
+        font-size: 3.5rem; } }
 
 .header-box {
   display: flex;
@@ -93,6 +94,9 @@ body {
   text-align: center;
   color: white;
   font-size: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-lead {
+      font-size: 3.5rem; } }
 
 .summit {
   color: #ffffff;

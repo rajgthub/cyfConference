@@ -23,7 +23,7 @@ body {
         font-weight :700;
         @include respond(phone) {
             letter-spacing: 1rem;
-            font-family: 5rem;
+            font-size: 6rem;
         }
     }
     &--code{
@@ -42,8 +42,9 @@ body {
     &--tns{
         transform: translateX(-50%);
         @include respond(phone){
-            transform: translateX(-70%);
-            
+            transform: translateX(-40%);
+            font-size: 3.5rem;
+
         }
     }
 }
@@ -58,6 +59,11 @@ body {
     text-align: center;
     color:white;
     font-size: 3rem;
+    @include respond(phone){
+            font-size: 3.5rem;
+            
+    }
+
 }
 .summit{
     color:#ffffff;
