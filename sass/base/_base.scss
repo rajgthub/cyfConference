@@ -7,8 +7,7 @@
 }
 @font-face {
     font-family: chunkfive;
-    src: url(fonts/chunkfive.ttf);
-    // src: url(yourfolderAddress/chunkfive.ttf);
+    src: url(fonts/chunkfive.ttf)  format('truetype');
 }
 html {
     // This defines what 1rem is
