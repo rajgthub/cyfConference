@@ -5,7 +5,11 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+@font-face {
+    font-family: chunkfive;
+    src: url(../../css/fonts/chunkfive.ttf);
+    // src: url(yourfolderAddress/chunkfive.ttf);
+}
 html {
     // This defines what 1rem is
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%

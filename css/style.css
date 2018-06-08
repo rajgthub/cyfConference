@@ -22,6 +22,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
+@font-face {
+  font-family: chunkfive;
+  src: url(../../css/fonts/chunkfive.ttf); }
+
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
@@ -44,10 +48,13 @@ body {
       padding: 0; } }
 
 body {
-  font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1;
   color: #777; }
+
+.fontlogo {
+  font-family: "chunkfive", "Lato", sans-serif;
+  font-weight: 400; }
 
 .heading-primary {
   color: #fff;
@@ -56,11 +63,9 @@ body {
   flex-direction: column;
   align-items: flex-end; }
   .heading-primary--main {
-    margin-bottom: .75rem;
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 400;
-    color: #e6e7e9;
-    font-weight: 700; }
+    color: #e6e7e9; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -68,7 +73,8 @@ body {
   .heading-primary--code {
     color: #d12e2f;
     transform: scale(1, 1.5);
-    font-weight: 700; }
+    font-family: "chunkfive", "Lato", sans-serif;
+    font-weight: 400; }
 
 .welcome {
   align-self: center;
@@ -76,12 +82,14 @@ body {
   text-transform: none;
   color: white;
   text-align: center;
-  margin-bottom: .75rem; }
+  margin-bottom: .75rem;
+  font-family: sans-serif;
+  font-weight: 700; }
   .welcome--tns {
-    transform: translateX(-50%); }
+    transform: translateX(-45%); }
     @media only screen and (max-width: 37.5em) {
       .welcome--tns {
-        transform: translateX(-40%);
+        transform: translateX(-30%);
         font-size: 3.5rem; } }
 
 .header-box {
@@ -91,8 +99,6 @@ body {
   justify-content: space-evenly; }
 
 .heading-lead {
-  text-align: center;
-  color: white;
   font-size: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-lead {
@@ -100,10 +106,18 @@ body {
 
 .summit {
   color: #ffffff;
+  transform: scale(1, 1.1);
+  font-family: sans-serif;
   margin-top: -1.5rem;
   text-transform: none;
-  font-weight: 700;
-  font-size: 9rem; }
+  font-weight: 900;
+  font-size: 9.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .summit {
+      font-size: 7rem; } }
+
+.nobtmargin {
+  margin-bottom: 0; }
 
 .header {
   height: 100vh;
