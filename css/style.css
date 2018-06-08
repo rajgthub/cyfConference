@@ -24,7 +24,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @font-face {
   font-family: chunkfive;
-  src: url(../../css/fonts/chunkfive.ttf); }
+  src: url(./fonts/chunkfive.ttf); }
 
 html {
   font-size: 62.5%; }
