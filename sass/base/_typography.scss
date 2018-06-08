@@ -59,6 +59,9 @@ body {
     // background: green;
     height: 80%;
     justify-content: space-evenly;
+    @include respond(phone){
+        height: 50%;
+    }
 }
 .heading-lead{
     // text-align: center;

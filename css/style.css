@@ -24,7 +24,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @font-face {
   font-family: chunkfive;
-  src: url(./fonts/chunkfive.ttf); }
+  src: url(fonts/chunkfive.ttf) format("truetype"); }
 
 html {
   font-size: 62.5%; }
@@ -97,6 +97,9 @@ body {
   flex-direction: column;
   height: 80%;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 37.5em) {
+    .header-box {
+      height: 50%; } }
 
 .heading-lead {
   font-size: 3rem; }
